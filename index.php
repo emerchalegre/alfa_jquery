@@ -15,18 +15,21 @@ and open the template in the editor.
         <link rel="stylesheet" href="assets/EasyTabs/easytabs.css" />
         <link rel="stylesheet" href="assets/projeto.css" />
 
-        <script src="assets/js/jquery-3.1.0.js"></script>
+        <script src="assets/js/jquery.js"></script>
         <script src="assets/bootstrap/js/bootstrap.js"></script>
         <script src="assets/js/jquery-ui/jquery-ui.js"></script>
         <script type="text/javascript" src="assets/selectboxit/selectboxit.js"></script>
-        <script type="text/javascript" src="assets/js/projeto.js"></script>
         <script type="text/javascript" src="assets/EasyTabs/jquery.easytabs.js"></script>
         <script type="text/javascript" src="assets/jquery.inputmask-3.x/js/inputmask.js"></script>
         <script type="text/javascript" src="assets/jquery.inputmask-3.x/js/inputmask.numeric.extensions.js"></script>
         <script type="text/javascript" src="assets/jquery.inputmask-3.x/js/jquery.inputmask.js"></script>
         <script type="text/javascript" src="assets/js/totop.js"></script>
-
-
+        <script type="text/javascript" src="assets/galleria/galleria-1.4.2.js"></script>
+        <script type="text/javascript" src="assets/js/projeto.js"></script>
+        <style>
+            .galleria{ width: 700px; height: 400px; background: #000 }
+        </style>
+        
     </head>
     <body>
 
@@ -141,7 +144,14 @@ and open the template in the editor.
                     </form>
                 </div>
                 <div id="galeriafotos">
-                    <p>Lorem Ipsum</p>
+                    <div class="galleria">
+                        <img src="assets/galeria/imagem1.jpg" data-title="Foto 1" data-description="Foto 1">
+                        <img src="assets/galeria/imagem2.jpg" data-title="Foto 2" data-description="Foto 2">
+                        <img src="assets/galeria/imagem3.jpg" data-title="Foto 3" data-description="Foto 3">
+                        <img src="assets/galeria/imagem4.jpg" data-title="Foto 4" data-description="Foto 4">
+                        <img src="assets/galeria/imagem5.jpg" data-title="Foto 5" data-description="Foto 5">
+                        <img src="assets/galeria/imagem6.png" data-title="Foto 6" data-description="Foto 6">
+                    </div>
                 </div>
             </div>
         </div>
@@ -151,6 +161,9 @@ and open the template in the editor.
         <footer>
             @emerchalegre - Alfa - jQuery Project
         </footer>
-
+        <script>
+            Galleria.loadTheme('assets/galleria/themes/classic/galleria.classic.min.js');
+            Galleria.run('.galleria');
+        </script>
     </body>
 </html>
